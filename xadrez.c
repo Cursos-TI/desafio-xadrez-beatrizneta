@@ -42,5 +42,32 @@ int main() {
         k++;
     } while (k < PASSOS_BISPO);
 
+int main() {
+    int i, j;
+
+    printf("Movimentos do CAVALO (padrão L - baixo + esquerda):\n");
+
+    // Loop externo com for – define o número total de movimentos
+    for (i = 0; i < MOVIMENTOS; i++) {
+        // Parte 1 do movimento em L: dois passos para baixo
+        j = 0;
+        while (j < 2) {
+            printf("Baixo\n");
+            j++;
+        }
+
+        // Parte 2 do movimento em L: um passo para a esquerda
+        j = 0;
+        do {
+            printf("Esquerda\n");
+            j++;
+        } while (j < 1);
+
+        // Separador entre movimentos
+        printf("---\n");
+    }
+
     return 0;
 }
+
+
